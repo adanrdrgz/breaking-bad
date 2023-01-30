@@ -96,4 +96,4 @@ Add a <Suspense fallback=...> component higher in the tree to provide a loading 
     background-size: 400px;
   }
 
-`;function Op(){const[e,t]=le.exports.useState({}),n=async()=>{const l=await(await fetch("https://breaking-bad-quotes.herokuapp.com/v1/quotes")).json();t(l[0])};return le.exports.useEffect(()=>{n()},[]),Sf(Np,{children:[qt(Pp,{quote:e}),qt(Tp,{onClick:n,children:"Get Quote"})]})}Td.render(qt(zf.StrictMode,{children:qt(Op,{})}),document.getElementById("root"));
+`;function Op(){const[e,t]=le.exports.useState({}),n=async()=>{const l=await(await fetch("https://api.breakingbadquotes.xyz/v1/quotes")).json();t(l[0])};return le.exports.useEffect(()=>{n()},[]),Sf(Np,{children:[qt(Pp,{quote:e}),qt(Tp,{onClick:n,children:"Get Quote"})]})}Td.render(qt(zf.StrictMode,{children:qt(Op,{})}),document.getElementById("root"));
