@@ -30,7 +30,7 @@ function App() {
   const [quote, setQuote] = useState({})
 
   const requestAPI = async () => {
-    const result = await fetch('https://breaking-bad-quotes.herokuapp.com/v1/quotes');
+    const result = await fetch('https://api.breakingbadquotes.xyz/v1/quotes');
     const response = await result.json()
     
     setQuote(response[0]);
